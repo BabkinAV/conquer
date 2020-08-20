@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>Conquer</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation" id = "drop-menu">
+            <ul class="navigation__list">
+                <li class="navigation__item" ><a href="#target-01" class="navigation__link navigation-text navigation__link--active" id = "link-01">Homepage</a></li>
+                <li class="navigation__item"><a href="#target-02" class="navigation__link navigation-text" id = "link-02">About us</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link navigation-text" id = "link-03">Services</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link navigation-text" id = "link-04">Contact</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link navigation-text" id = "link-05">External</a></li>
+            </ul>
+
+        </nav>
+
+        <button onclick="show_hide()" class="hamburger">
+            <span class="hamburger__line"></span>
+        </button>
+    </header>
+  <main>
+        <section class="title  parallax" id = "target-01">
+            <div class="title__container">
+                <h1 class="title__heading heading-big">Conquer</h1>
+                <h4 class="title__subheading heading-small">Simple Bootstrap Template</h4>
+            </div>
+        </section>
+        <section class="stories" id = "target-02">
+            <div class="stories__container stories__container--three">
+                <div class="card card--three text-center">
+                    <div class="card__picture card__picture--1">
+                        &nbsp;
+                    </div>
+                    <div class="card__details">
+                        <h3 class="card__heading card__heading--green heading-secondary">Bootstrap v3.3.6</h3>
+                        <p class="card__text paragraph-text">Morbi sagittis justo a velit placerat ullamcorper quis quis
+                            velit. Sed
+                            convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi
+                            vitae suscipit. Duis lectus magna, ornare ac scelerisque.</p>
+                        <a href="#" class="btn btn--green btn-text text-center">Button Green</a>
+                    </div>
+                </div>
+                <div class="card card--three text-center">
+                    <div class="card__picture card__picture--2">
+                        &nbsp;
+                    </div>
+                    <div class="card__details">
+                        <h3 class="card__heading card__heading--blue heading-secondary">Responsive Design</h3>
+                        <p class="card__text paragraph-text">Conquer Template is provided by templatemo for free of
+                            charge. You can use
+                            this template for any kind of website. No credit link is required. All images by Unsplash.
+                            Thank you for visiting our website. Please come again!</p>
+                        <a href="#" class="btn btn--blue btn-text text-center">See Details</a>
+                    </div>
+                </div>
+                <div class="card card--three text-center">
+                    <div class="card__picture card__picture--3">
+                        &nbsp;
+                    </div>
+                    <div class="card__details">
+                        <h3 class="card__heading card__heading--grey heading-secondary">Parallax Layout</h3>
+                        <p class="card__text paragraph-text">Morbi sagittis justo a velit placerat ullamcorper quis quis
+                            velit. Sed
+                            convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi
+                            vitae suscipit. Duis lectus magna, ornare ac scelerisque.</p>
+                        <a href="#" class="btn btn--red btn-text text-center">Button Red</a>
+                    </div>
+                </div>
+            </div>
+            <div class="stories__container stories__container--two">
+                <div class="card card--two">
+                    <div class="card__picture card__picture--4">
+                        &nbsp;
+                    </div>
+                    <div class="card__details">
+                        <h3 class="card__heading card__heading--grey heading-secondary">Two Column Left Side</h3>
+                        <p class="card__text card__text--top paragraph-text">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.
+                            Nam tempor
+                            eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at
+                            consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus
+                            pretium.
+                        </p>
+                        <p class="card__text card__text--bottom paragraph-text">
+                            Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed
+                            tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae
+                            venenatis magna, in blandit metus.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card--two">
+                    <div class="card__picture card__picture--5">
+                        &nbsp;
+                    </div>
+                    <div class="card__details text-center">
+                        <h3 class="card__heading card__heading--grey heading-secondary">Two Column Right Side</h3>
+                        <p class="card__text card__text--top paragraph-text">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.
+                            Nam tempor
+                            eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at
+                            consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus
+                            pretium.
+                        </p>
+                        <p class="card__text card__text--bottom paragraph-text">
+                            Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed
+                            tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae
+                            venenatis magna, in blandit metus.
+                        </p>
+                        <a href="#" class="btn btn--white btn-text text-center">See Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services parallax" id = "target-03">
+            <div class="services__container text-center">
+                <h1 class="services__heading heading-medium">Our Services</h1>
+                <p class="services__text paragraph-text-big">
+                    Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam.Sed id<br>
+                    felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.<br>
+                    Etiam a mi quis arcu varius condimentum.
+                </p>
+            </div>
+        </section>
+
+        <section class="tours">
+            <div class="tours__container tours__container--four">
+                <div class="card card--four text-center">
+                    <div class="card__picture card__picture--6">
+                        &nbsp;
+                    </div>
+                    <div class="card__details">
+                        <h3 class="card__heading card__heading--grey heading-secondary">Column One</h3>
+                        <p class="card__text paragraph-text">Ut ac odio scelerisque ante ornare commodo. Sed faucibus
+                            dui libero, in tincidunt purus pretium quis. Fusce posuere
+                            egestas enim eu viverra.</p>
+                    </div>
+                </div>
+                <div class="card card--four text-center">
+                    <div class="card__picture card__picture--7">
+                        &nbsp;
+                    </div>
+                    <div class="card__details">
+                        <h3 class="card__heading card__heading--grey heading-secondary">Column Two</h3>
+                        <p class="card__text paragraph-text">Ut ac odio scelerisque ante ornare commodo. Sed faucibus
+                            dui libero, in tincidunt purus pretium quis.</p>
+                    </div>
+                    <a href="#" class="btn btn--white btn-text text-center">Read It</a>
+                </div>
+                <div class="card card--four text-center">
+                    <div class="card__picture card__picture--8">
+                        &nbsp;
+                    </div>
+                    <div class="card__details">
+                        <h3 class="card__heading card__heading--grey heading-secondary">Column Three</h3>
+                        <p class="card__text paragraph-text">Ut ac odio scelerisque ante ornare commodo. Sed faucibus
+                            dui libero, in tincidunt purus pretium quis. Fusce posuere
+                            egestas enim eu viverra.</p>
+                    </div>
+                </div>
+                <div class="card card--four text-center">
+                    <div class="card__picture card__picture--9">
+                        &nbsp;
+                    </div>
+                    <div class="card__details">
+                        <h3 class="card__heading card__heading--grey heading-secondary">Column Four</h3>
+                        <p class="card__text paragraph-text">Ut ac odio scelerisque ante ornare commodo. Sed faucibus
+                            dui libero, in tincidunt purus pretium quis.</p>
+                    </div>
+                    <a href="#" class="btn btn--white btn-text text-center">Details</a>
+                </div>
+            </div>
+
+
+            <div class="tours__container tours__container--one">
+                <div class="card card--one">
+                    <div class="card__picture card__picture--10">
+                        &nbsp;
+                    </div>
+                    <div class="card__details">
+                        <h3 class="card__heading card__heading--grey heading-secondary">One Big Column
+                        </h3>
+                        <p class="card__text card__text--top paragraph-text">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec
+                            iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit
+                            amet velit finibus pretium.
+                            Vivamus dictum nisi ac fermentum interdum. Vestibulum vel mauris at erat mattis accumsan
+                            et ac lorem. Cras non venenatis
+                            orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci.
+                            Sed vitae venenatis magna, in
+                            blandit metus. Praesent volutpat cursus rhoncus. Aenean arcu diam, suscipit ac neque in,
+                            sollicitudin convallis orci.
+                        </p>
+                        <p class="card__text card__text--bottom paragraph-text">
+                            Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis
+                            parturient montes, nascetur
+                            ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. Morbi
+                            sagittis justo a velit placerat
+                            ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis
+                            velit neque. Quisque semper porta
+                            nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque quis, maximus eget nisi.
+                        </p>
+                    </div>
+                    <a href="#" class="btn btn--white btn-text text-center tours__btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="form parallax" id = "target-04">
+            <div class="form__container">
+                <h1 class="form__heading heading-medium">Contact form</h1>
+                <form action="#" class="form__content">
+                    <div class="form__inner">
+                        <div class="form__inner-top">
+                            <p class="form__text paragraph-form text-center">
+                                Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id
+                                felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.
+                                Etiam a mi quis arcu varius condimentum.
+                            </p>
+                        </div>
+                        <div class="form__inner-left">
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Name" id="name">
+                                <label for="name" class="form__label visuallyhidden">Name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Email" id="email">
+                                <label for="email" class="form__label visuallyhidden">Email</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Subject" id="subject">
+                                <label for="subject" class="form__label visuallyhidden">Subject</label>
+                            </div>
+                        </div>
+                        <div class="form__inner-right">
+                            <div class="form__group-textarea">
+                                <textarea name="textarea" id="textarea" placeholder="Your message here..."
+                                    class="form__textarea"></textarea>
+                                <label for="textarea" class="form__textarea-label visuallyhidden">Textarea</label>
+                            </div>
+                            <button class="form-btn">Send</button>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id = "target-05">
+        <div class="footer__container footer__container-upper">
+            <h1 class="footer__heading heading-medium-1">
+                Use it free!
+            </h1>
+            <p class="footer__paragraph paragraph-text paragraph-text-italic">
+                “Conquer is free Bootstrap template from templatemo website.
+                No backlink is required to use this layout.”
+            </p>
+        </div>
+        <div class="footer__container  footer__container-lower">
+            <p class="footer__paragraph-lower paragraph-text-small">
+                Copyright &#169; 2020 Andrey V. Babkin
+            </p>
+        </div>
+    </footer> 
+
+    <a href="#" id = "scrollup" class="scrollup scrollup--hide"></a>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

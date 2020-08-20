@@ -1,0 +1,211 @@
+.form {
+    background-image: url(../img/bg-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60rem;
+    padding-top: 10rem;
+
+    @media only screen  and (max-width: 768px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+
+
+
+    &__container {
+        width: 72rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media only screen  and (max-width: 768px) {
+            width: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+    }
+
+    &__heading {
+        color:  $color-white;
+        text-transform: capitalize;
+        text-shadow: 2px 2px #333;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+        column-gap: 3rem;
+
+        @media only screen  and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
+
+
+        &-top {
+            background-color: rgba($color-white, 0.4);
+            border-radius: 5px;
+
+            grid-column: 1 / -1;
+
+
+
+
+        }
+
+        &-left {
+            grid-column: 1 / 2;
+
+            @media only screen  and (max-width: 768px) {
+            grid-column: 1 / -1;
+
+            }
+        }
+
+        &-right {
+            grid-column: 2 / 3;
+
+            @media only screen  and (max-width: 768px) {
+                grid-column: 1 / -1;
+            }
+
+
+        }
+
+    }
+
+    &__text {
+        padding: 2rem 1.5rem;
+    }
+
+    &__group:not(:last-child) {
+
+		margin-bottom: 2rem;
+
+	}
+
+    &__group-text {
+        position: relative;
+    }
+
+    
+
+    &__input {
+        width: 100%;
+        border-radius: 4px;
+        height: 3.4rem;
+        padding: 0.6rem 1.2rem;
+        display: block;
+        background: rgba($color-grey-light, 0.4);
+        color: $color-black-2;
+        border: none;
+        font-size: 1.4rem;
+        line-height: 1.42857143;
+
+
+
+        &::placeholder {
+            opacity: 1;
+            color: $color-black-2;
+
+        }
+
+        &:focus {
+            border-color: #66afe9;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+
+            &::placeholder {
+                color: transparent;
+            }
+
+        }
+        
+        
+        
+
+    }
+
+    &__textarea {
+        height: 132px;
+        resize: none;
+        width: 100%;
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        background: rgba($color-grey-light, 0.4);
+        color: $color-black-2;
+        border: none;
+        font-size: 14px;
+        line-height: 1.42857143;
+
+        &::placeholder {
+            opacity: 1;
+            color: $color-black-2;
+
+        }
+
+        &:focus {
+            border-color: $color-blue-light-1;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+
+            &::placeholder {
+                color: transparent;
+            }
+
+        }
+
+        
+    }
+
+    &-btn {
+        display: inline-block;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        background: #262628 none repeat scroll 0 0;
+        color: #fff;
+        padding: 1rem 3rem;
+        font-size: 1.8rem;
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+        border-color:  $color-grey-light-2;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+        border: 1px solid;
+
+        &:hover,
+        &:active 
+         {
+            color: $color-grey-dark-2;
+            background-color:  $color-grey-light-3;
+            border-color: $color-grey-light-4;
+        }
+
+        &:active {
+            background-image: none;
+            background: $color-black-3 none repeat scroll 0 0;
+            color: $color-white;
+        }
+
+        &:focus {
+            outline: thin dotted;
+            outline-offset: -2px;
+
+
+        }
+
+
+        
+    }
+}

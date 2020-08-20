@@ -1,0 +1,83 @@
+.btn {
+
+    &,
+	&:link,
+	&:visited {
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 10px 30px;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.3s ease;
+        
+
+        
+
+    }
+
+
+    &--green {
+        &,
+        &:link,
+        &:visited {
+            background-color: $color-green;
+            color: $color-white;
+
+        }
+
+        &:hover {
+            background-color: $color-green-light;
+        }
+
+    }
+   
+    &--blue {
+        &,
+        &:link,
+        &:visited {
+            background-color:  $color-blue;
+            color: $color-white;
+
+        }
+
+        &:hover {
+            background-color: $color-blue-light;
+        }
+
+    }
+
+    &--red {
+        &,
+        &:link,
+        &:visited {
+            background-color:  $color-red;
+            color: $color-white;
+
+        }
+
+        &:hover {
+            background-color: $color-red-light;
+        }
+
+    }
+
+    &--white {
+        &,
+        &:link,
+        &:visited {
+            background-color:  $color-white;
+            border: 1px solid $color-grey-light-2;
+            color: $color-grey-light-1;
+
+        }
+
+        &:hover {
+            background-color: $color-grey-light-3;
+        }
+
+    }
+
+
+    
+
+}

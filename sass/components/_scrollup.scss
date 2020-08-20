@@ -1,0 +1,21 @@
+.scrollup {
+    position: fixed;
+    z-index: 2147483647;
+    bottom: 30px;
+    
+
+    background-image: url(../img/top.png);
+    right: 20px;
+    width: 38px;
+    height: 38px;
+
+    &--hide {
+        display: none;
+    }
+
+    &--show {
+        display: block;
+    }
+
+}
+

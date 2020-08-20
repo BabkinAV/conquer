@@ -1,0 +1,41 @@
+.title {
+    margin-top: 7.5rem;
+    background-image: url(../img/bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    min-height: 76vh;
+    position: relative;
+    z-index: 10;
+
+    @media only screen and (max-width: 991px) and (min-width: 768px) {
+        margin-top: 6.5rem;
+    }
+
+    @media screen and (max-width:768px) {
+        margin-top: 0;
+    }
+
+    &__container {
+        position: absolute;
+        top: 17rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+    }
+
+    &__heading {
+        color: $color-white;
+        text-transform: uppercase;
+        text-shadow: 2px 2px #000;
+    }
+
+     &__subheading {
+        color: $color-white;
+        text-shadow: 1px 1px #333;
+        text-align: center;
+        margin-top: 1.0rem;
+    }
+
+
+}

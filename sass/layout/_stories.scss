@@ -1,0 +1,67 @@
+.stories {
+    background-color: $color-white;
+    padding: 7rem 0;
+    
+    &__container {
+        
+
+        display: grid;
+
+        justify-content: center;
+
+
+
+        &--three {
+            grid-template-columns: repeat(3, 36rem);
+            column-gap: 3rem;
+
+            @media only screen  and (max-width: 1200px) {
+                grid-template-columns: repeat(3, 30rem);
+
+            }
+
+            @media only screen  and (max-width: 991px) {
+                grid-template-columns: repeat(3, 23rem);
+
+            }
+
+            @media only screen  and (max-width: 768px) {
+                grid-template-columns: 36rem;
+
+            }
+
+            @media only screen  and (max-width: 380px) {
+                grid-template-columns: 100%;
+
+            }
+            
+        }
+
+        &--two {
+            margin-top: 6rem;
+            grid-template-columns: repeat(2, 55.5rem);
+            column-gap: 3rem;
+
+            @media only screen  and (max-width: 1200px) {
+                grid-template-columns: repeat(2, 46.5rem);
+            
+            }
+
+            @media only screen  and (max-width: 991px) {
+                grid-template-columns: repeat(2, 36rem);
+
+            }
+
+            @media only screen  and (max-width: 768px) {
+                grid-template-columns: 55.5rem;
+
+            }
+
+            @media only screen  and (max-width: 575px) {
+                grid-template-columns: 100%;
+
+            }
+        }
+
+    }
+}

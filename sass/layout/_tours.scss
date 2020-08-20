@@ -1,0 +1,70 @@
+.tours {
+    background-color: $color-white;
+    padding: 7rem 0;
+
+    &__container {
+        
+        display: grid;
+
+        justify-content: center;
+
+
+
+        &--four {
+            grid-template-columns: repeat(4, 26rem);
+            column-gap: 3rem;
+            margin-bottom: 6rem;
+
+            @media only screen  and (max-width: 1200px) {
+
+                grid-template-columns: repeat(4, 22rem);
+            
+            }
+
+            @media only screen  and (max-width: 991px) {
+                grid-template-columns: repeat(2, 26rem);
+                column-gap: 11.5rem;
+
+
+            }
+
+            @media only screen  and (max-width: 767px) {
+                column-gap: 0;
+                justify-content: space-between;
+                margin-left: 1rem;
+                margin-right: 1rem;
+
+            }
+
+            @media only screen  and (max-width: 575px) {
+                grid-template-columns: 26rem;
+                justify-content: center;
+                margin-left: 1rem;
+                margin-right: 1rem;
+
+            }
+
+            
+        }
+
+        &--one {
+            grid-template-columns: 113rem;
+            margin-bottom: 6rem;
+
+            @media only screen  and (max-width: 1200px) {
+            grid-template-columns: 100%;
+            margin-left: 3rem;
+            margin-right: 3rem;
+
+            }
+            
+        }
+
+    }
+
+    &__btn {
+        margin-left: 2.7rem;
+    }
+
+
+}

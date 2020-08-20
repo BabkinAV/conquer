@@ -1,0 +1,33 @@
+.footer {
+
+    &__container {
+        text-align: center;
+        
+
+        &-upper {
+ 
+            border-bottom: 1px solid #eee;
+            
+
+        }
+    }
+
+    &__heading {
+        color: $color-grey-light-1;
+        margin-bottom: 2.5rem;
+        margin-top: 3.5rem;
+    }
+
+    &__paragraph {
+        color: $color-grey-light-5;
+        margin-bottom: 4rem;
+
+        &-lower {
+            margin-top: 2rem;
+            color: $color-grey-light-1;
+            margin-bottom: 3rem;
+        }
+    }
+    
+    
+}
